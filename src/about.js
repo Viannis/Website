@@ -15,35 +15,74 @@ import AboutProfile from './aboutprofile.js';
 function About(){
     return(
         <div className="blogdo1 noscroll">
-            {/* <div className="profile-content-outer">
-                <div className="profile-content-inner">
-                    <div className="profile-content">
-                        <AboutProfile />
-                        <AboutProfile />
-                        <AboutProfile />  
-                        <AboutProfile />
-                        <AboutProfile />
-                        <AboutProfile /> 
-                    </div>
-                </div>
-            </div> */}
             <div className="new-try">
-                <AboutProfile />
-                <AboutProfile />
-                <AboutProfile />
-                <AboutProfile />
-                <AboutProfile />
-                <AboutProfile />
+                <AboutProfile 
+                    imgSource={Avatar}  
+                    name="Murphy" 
+                    specialAt="Web Designing" 
+                    postCount="500" 
+                    contributionCount="800" 
+                    fbLink="#" 
+                    twLink="#" 
+                    gitLink="#" 
+                    codeLink="#" 
+                />
+                <AboutProfile 
+                    imgSource={Avatar}  
+                    name="Vishnu Varthan L R" 
+                    specialAt="Full Stack Development" 
+                    postCount="500" 
+                    contributionCount="800" 
+                    fbLink="#" 
+                    twLink="#" 
+                    gitLink="#" 
+                    codeLink="#" 
+                />
+                <AboutProfile 
+                    imgSource={Avatar}  
+                    name="Vigneshwar M" 
+                    specialAt="Full Stack Development" 
+                    postCount="500" 
+                    contributionCount="800" 
+                    fbLink="#" 
+                    twLink="#" 
+                    gitLink="#" 
+                    codeLink="#" 
+                />
+                <AboutProfile 
+                    imgSource={Avatar}  
+                    name="Vignesh R" 
+                    specialAt="Full Stack Development" 
+                    postCount="500" 
+                    contributionCount="800" 
+                    fbLink="#" 
+                    twLink="#" 
+                    gitLink="#" 
+                    codeLink="#" 
+                />
+                <AboutProfile 
+                    imgSource={Avatar}  
+                    name="Sethupathi P" 
+                    specialAt="Full Stack Development" 
+                    postCount="500" 
+                    contributionCount="800" 
+                    fbLink="#" 
+                    twLink="#" 
+                    gitLink="#" 
+                    codeLink="#" 
+                />
+                <AboutProfile 
+                    imgSource={Avatar}  
+                    name="Santosh R" 
+                    specialAt="Full Stack Development" 
+                    postCount="500" 
+                    contributionCount="800" 
+                    fbLink="#" 
+                    twLink="#" 
+                    gitLink="#" 
+                    codeLink="#" 
+                />
             </div>
-                
-               
-            
-                        
-                   
-               
-           
-            
-           
         </div>
     );
 }

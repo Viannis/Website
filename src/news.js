@@ -5,24 +5,24 @@ import Ml from './images/Machine-learning.jpg';
 import Avatar from './images/male-avatar.jpg';
 import Calendar from './images/calendar.png';
 
-function News(){
+function News(props){
     return (
         <Grid container spacing={1}>
             <Grid item xs={3} className="newsimg">
-                <img src={Ml} className="newsimgwh" />
+                <img src={props.newsImg} className="newsimgwh" />
             </Grid>
             <Grid item xs={9} className="newsdetail">
                 <Grid item xs={12} className="newsgist">
-                    <h2 className="newsHeading">Machine Learning is almost ruining our lives</h2>
+                    <h2 className="newsHeading">{props.newsHeading}</h2>
                 </Grid>
                 <Grid container spacing={1}>
                     <Grid item xs={6} className="newsauthordetail">
                         <Grid container spacing={1}>
                             <Grid item xs={2} className="newsauthorimg">
-                                <img src={Avatar} className="authorimg" />
+                                <img src={props.imgSource} className="authorimg" />
                             </Grid>
                             <Grid item xs={10} className="newsauthorname">
-                                <h4>Murphy</h4>
+                                <h4>{props.name}</h4>
                             </Grid>
                         </Grid>     
                     </Grid>
@@ -32,7 +32,7 @@ function News(){
                                 <img src={Calendar} className="authorimg" />
                             </Grid>
                             <Grid item xs={10} className="newsdate">
-                                <h4>Murphy</h4>
+                                <h4>{props.date}</h4>
                             </Grid>
                         </Grid>
                     </Grid>

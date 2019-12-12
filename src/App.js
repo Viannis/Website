@@ -5,7 +5,8 @@ import Home from './landing';
 import Do from './do.js';
 import New from './new.js';
 import About from './about.js';
-import { BrowserRouter as Router, Route} from 'react-router-dom'
+import Contact from './contact.js';
+import { BrowserRouter as Router, Route, Link, Switch} from 'react-router-dom'
 
 const particleOpt = {
   particles: {
@@ -116,15 +117,30 @@ const particleOpt = {
 function App() {
   return (
       <div className="App">
-        <div className="container topBotomBordersOut">
-          <a id="homeLink">HOME</a>
-          <a id="newLink">WHAT'S NEW</a>
-          <a id="doLink">WHAT WE DO</a>
-          <a id="aboutLink">ABOUT US</a>
-          <a id="contactLink">CONTACT US</a>
-        </div>
         <Router>
-          <Route exact path="/about" component={About}></Route>
+          <div className="container topBotomBordersOut">
+            <Link to="/" id="homeLink">HOME</Link>
+            <Link to="/news" id="newLink">WHAT'S NEW</Link>
+            <Link to="/do" id="doLink">WHAT WE DO</Link>
+            <Link to="/about" id="aboutLink">ABOUT US</Link>
+            <Link to="/contact" id="contactLink">CONTACT US</Link>
+          </div>
+        
+          <Route exact path="/" component={Home}></Route>
+          <Switch>
+            <Route path="/about">
+              <About />
+            </Route>
+            <Route path="/news">
+              <New />
+            </Route>
+            <Route path="/do">
+              <Do />
+            </Route>
+            <Route path="/contact">
+              <Contact />
+            </Route>
+          </Switch>
         </Router>
       <Particles className="particles" params={particleOpt}>
         

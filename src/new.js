@@ -3,8 +3,11 @@ import './App.css';
 import Grid from '@material-ui/core/Grid';
 import News from './news.js';
 import Chip from '@material-ui/core/Chip';
+import Ml from './images/Machine-learning.jpg';
+import Avatar from './images/male-avatar.jpg';
 
 function New() {
+    console.log("hai")
     return(
         <div className="blogdo">
             <Grid container spacing={2}>
@@ -15,12 +18,48 @@ function New() {
                     <div className="newsouter">
                         <div className="newsinner">
                             <div className="newscontent">
-                                <News />
-                                <News />
-                                <News />
-                                <News />
-                                <News />
-                                <News />
+                                <News 
+                                    newsImg={Ml}
+                                    newsHeading="Machine Learning is almost ruining our lives"
+                                    imgSource={Avatar}
+                                    name="Murphy"
+                                    date="20/20/2020"
+                                />
+                                <News 
+                                    newsImg={Ml}
+                                    newsHeading="Machine Learning is almost ruining our lives"
+                                    imgSource={Avatar}
+                                    name="Vishnu Varthan"
+                                    date="20/20/2020"
+                                />
+                                <News 
+                                    newsImg={Ml}
+                                    newsHeading="Machine Learning is almost ruining our lives"
+                                    imgSource={Avatar}
+                                    name="Vigneshwar"
+                                    date="20/20/2020"
+                                />
+                                <News 
+                                    newsImg={Ml}
+                                    newsHeading="Machine Learning is almost ruining our lives"
+                                    imgSource={Avatar}
+                                    name="Vignesh"
+                                    date="20/20/2020"
+                                />
+                                <News 
+                                    newsImg={Ml}
+                                    newsHeading="Machine Learning is almost ruining our lives"
+                                    imgSource={Avatar}
+                                    name="Sethupathi"
+                                    date="20/20/2020"
+                                />
+                                <News 
+                                    newsImg={Ml}
+                                    newsHeading="Machine Learning is almost ruining our lives"
+                                    imgSource={Avatar}
+                                    name="Santosh R"
+                                    date="20/20/2020"
+                                />
                             </div>
                         </div>
                     </div>    
